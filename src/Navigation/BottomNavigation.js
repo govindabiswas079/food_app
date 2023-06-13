@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Octicons from 'react-native-vector-icons/Octicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import {
     HomeScreen,
     UserScreen,
@@ -66,7 +69,7 @@ const ButtomNavigation = () => {
                         },
                         tabBarLabel: 'Home',
                         tabBarIcon: ({ color }) => (
-                            <Octicons name="home" color={color} size={20} />
+                            <FontAwesome5 name="user" color={color} size={20} />
                         ),
                     }}
                 />
@@ -79,7 +82,7 @@ const ButtomNavigation = () => {
                         },
                         tabBarLabel: 'Home',
                         tabBarIcon: ({ color }) => (
-                            <Octicons name="home" color={color} size={20} />
+                            <MaterialIcons name="shopping-cart" color={color} size={20} />
                         ),
                     }}
                 />
@@ -92,7 +95,7 @@ const ButtomNavigation = () => {
                         },
                         tabBarLabel: 'Home',
                         tabBarIcon: ({ color }) => (
-                            <Octicons name="home" color={color} size={20} />
+                            <AntDesign name="message1" color={color} size={20} />
                         ),
                     }}
                 />
